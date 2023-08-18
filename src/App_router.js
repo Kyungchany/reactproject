@@ -40,7 +40,8 @@ export default function App_router() {
       children:[
         {index:true, element:<Home/>},
         {path:'/product', element:<Product/>},
-        {path:'/product/:productId', element:<Detail/>}
+        {path:'/product/:productId', element:<Detail/>},
+        
       ]
     }
   ])
