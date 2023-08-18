@@ -1,0 +1,120 @@
+header {
+  width:1200px;
+  min-width:768px; 
+  height:110px;
+  background:white;
+  margin:60px auto;
+  position:absolute;
+  left:50%;
+  margin-left:-600px;
+  top:0px;
+  border:solid 1px black;
+  border-radius: 5px;
+  z-index:999;
+  
+}
+h1#logo {
+  position:absolute;
+  width:100%;
+  height:auto;
+  left:5%;
+  top:15%;
+}
+/* h1#logo>a>img{
+ 
+} */
+nav#info {
+  width:80%;
+  height:30px;
+  background:#3C3C3C;
+  position:absolute;
+  right:0px;
+}
+ul#info_list {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+ul#info_list>li {
+  font:normal 0.75em/30px "Noto Sans KR";
+  padding-left:3%;
+  box-sizing: border-box;
+  color:#B4B4B4;
+}
+nav#mainmenu {
+  width:80%;
+  height:80px;
+  position:absolute;
+  bottom:0px;
+  right:0%;
+  
+}
+ul#mainmenu_list {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+ul#mainmenu_list>li {
+  font:normal 19px "Noto Sans KR";
+  text-decoration: none;
+  color:black;
+}
+ul#mainmenu_list>li>a {
+  font:normal 19px "Noto Sans KR";
+  text-decoration: none;
+  color:black;
+  position: relative;
+  top:0px;
+}
+ul#mainmenu_list>li>a.selected {
+  color:#4C67BF;
+}
+
+
+div#company_profile {
+  width:20%;
+  height:30px;
+  /* background:red; */
+  position:absolute;
+  right:0px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+p#profile_title>a {
+  font:normal 0.5vw/30px "Noto Sans KR";
+  color:#B4B4B4;
+  text-decoration: none;
+}
+p#profile_img>a {
+  font-size:15px;
+  line-height: 30px;
+  color:white;
+}
+button.button {
+  height:20px;
+  color:white;
+  background:#4C67BF;
+  border-radius:5px;
+  border:none;
+  margin-top:5px
+}
+
+
+@media screen and (max-width:1200px) {
+  header {
+    width:100%;
+    position:absolute;
+    margin-left:-50%;
+   
+  }
+  ul#info_list>li {
+    font-size:1vw;
+  }
+}
+

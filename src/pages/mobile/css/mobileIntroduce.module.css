@@ -1,0 +1,118 @@
+div.introduce_Wrap {
+  width:100%;
+  height:auto;
+  margin-bottom:30px;
+}
+p.title_img {
+  margin-left:4.5vw;
+}
+p.title_img>img {
+  width:6%;
+}
+p.title {
+  font:bold 4vw "Noto Sans KR";
+  position:absolute;
+  left:12vw;
+  top:285px;
+}
+ul.menulist {
+  width:90%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:30px;
+  margin-left:4.5vw;
+}
+ul.menulist>li>button {
+  width:20vw;
+  height:35px;
+  font:normal 4vw/35px "Noto Sans KR";
+  border-radius: 6px;
+  border:none;
+  background: #034EA1;
+  color:white;
+}
+ul.products_list {
+  width:90%;
+  margin-left:4.5vw;
+  margin-top:30px;
+  text-align: center;
+}
+p.products_title {
+  font:normal 4vw "Noto Sans KR";
+  padding-top:20px;
+  color:#034EA1;
+}
+p.products_img>img {
+  width: 50%;
+  padding-top:20px;
+}
+p.products_text {
+  width:50%;
+  margin:0px auto;
+  /* background:red; */
+  text-align: left;
+  font:normal 4vw "Noto Sans KR";
+  padding-top:20px;
+  padding-bottom:30px;
+}
+button.details {
+  width:25vw;
+  height:30px;
+  background:#5B6269;
+  border: none;
+  color:white;
+  font:bold 3.5vw "Noto Sans KR";
+  border-radius: 6px;
+  margin-bottom:20px;
+}
+
+
+
+@media screen and (orientation:landscape) {
+  div.introduce_Wrap {
+    margin-top:20px;
+  }
+  p.title_img>img {
+    width:4%;
+  }
+  p.title {
+    font:bold 3vw "Noto Sans KR";
+    position:absolute;
+    left:10vw;
+    top:400px;
+  }
+  ul.menulist>li>button {
+    width:18vw;
+    font:normal 3vw/40px "Noto Sans KR";
+  }
+  button.details {
+    height:40px;
+  }
+  p.products_title {
+    font:normal 2.5vw "Noto Sans KR";
+  }
+  p.products_img>img {
+    width:40%;
+  }
+  p.products_text {
+    width:40%;
+    font:normal 2vw "Noto Sans KR";
+  }
+  ul.menulist>li>button {
+    width:20vw;
+    height:40px;
+    font:normal 2.5vw/40px "Noto Sans KR";
+    border-radius: 6px;
+    border:none;
+    background: #034EA1;
+    color:white;
+  }
+  button.details {
+    width:15vw;
+    height:30px;
+    font:bold 2vw "Noto Sans KR";
+
+  }
+}

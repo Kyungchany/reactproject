@@ -1,0 +1,50 @@
+div.employment_wrap {
+  width:100%;
+  height:220px;
+  background:white;
+  border:solid 1px #D2D2D2;
+  box-sizing: border-box;
+  text-align: center;
+  /* box-shadow: 0px -20px 60px rgba(0, 0, 0, 0.1); */
+}
+p.title{
+  font:bold 4vw "Noto Sans KR";
+  padding-top:35px;
+  box-sizing: border-box;
+}
+p.text {
+  font:normal 4vw/21px "Noto Sans KR";
+  padding-top:25px;
+}
+button.button {
+  font:normal 4vw "Noto Sans KR";
+  background:white;
+  border:solid 1px #D2D2D2;
+  box-sizing: border-box;
+  width:30vw;
+  height:40px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+button.buttn>span {
+  padding-right: 5px;
+}
+
+@media screen and (orientation:landscape) {
+  div.employment_wrap {
+    height:360px;
+  }
+  p.title{
+    padding-top:40px;
+  }
+  p.text {
+    font:normal 3vw/36px "Noto Sans KR";
+    padding-top:40px;
+  }
+  button.button {
+    font:normal 3vw "Noto Sans KR";
+    width:26vw;
+    height:60px;
+    margin-top: 50px;
+  }
+}

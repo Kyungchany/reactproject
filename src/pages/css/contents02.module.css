@@ -1,0 +1,120 @@
+div#contents02_wrap {
+  width:100%;
+  height:320px;
+  background:#2d4697;
+  position: relative;
+  left:0px;
+  top:0px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+div#contents02_img {
+  width:40%;
+  height:100%;
+  background:url('/public/images/contents02_img01.png') no-repeat center;
+  background-size:cover;
+}
+div#contents02_detail {
+  width:60%;
+  height:100%;
+}
+div#detail {
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+p.title {
+  padding-top:35px;
+  box-sizing: border-box;
+  font:Bold 16px "Noto Sans KR";
+  color:white;
+}
+p.sub_title {
+  padding-top:30px;
+  padding-bottom:20px;
+  box-sizing: border-box;
+  font:bold 15px "Noto Sans KR";
+  color:#ffc209;
+}
+p.text {
+  padding-bottom:50px;
+  box-sizing: border-box;
+  font:normal 15px "Noto Sans KR";
+  color:#c7c7c7;
+}
+p.product>a {
+  font:normal 15px "Noto Sans KR";
+  color:#c7c7c7;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+p.product>span>img {
+  padding-left:20px;
+} 
+ul#menulist {
+  width:15%;
+  height:280px;
+  position:absolute;
+  left:40%;
+  top:50%;
+  margin-top:-140px;
+}
+ul#menulist>li {
+  width:100%;
+  height:56px;
+  background:#3c3c3c;
+  border-radius: 0px 5px 0px 0px;
+  border-bottom:solid 2px #2d4697;
+  padding-left:15%;
+  box-sizing: border-box;
+  color:#727272;
+  font:bold 0.8vw/56px "Noto Sans KR";
+  position:relative;
+  left:0px;
+  top:0px;
+}
+ul#menulist>li::before {
+  content:"";
+  display:block;
+  width:8px;
+  height:8px;
+  background:#4c67bf;
+  position:absolute;
+  left:5%;
+  top:50%;
+  margin-top:-4px;
+}
+
+@media screen and (max-width:1200px) {
+  ul#menulist>li {
+    font:bold 0.8vw/26px "Noto Sans KR";
+  }
+  ul#menulist>li::before {
+    content:"";
+    display:block;
+    width:8px;
+    height:8px;
+    background:#4c67bf;
+    position:absolute;
+    left:5%;
+    top:24%;
+    
+  }
+}
+@media screen and (max-width:980px) {
+  p.title {
+    font-size:1.6vw
+  }
+  p.sub_title {
+    font-size:1.5vw;
+  }
+  p.text {
+    font-size:1.5vw;
+  }
+  p.product {
+    font-size:1vw;
+  }
+}
+
+

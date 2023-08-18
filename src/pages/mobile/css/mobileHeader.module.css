@@ -1,0 +1,124 @@
+/* 피그마 작업시 width=640px 나누기 1.8 356px */
+div.mobileHeader {
+  width:100%; 
+  height:81px;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+div.mobileLogo {
+  position:absolute;
+  left:4.5vw;
+  top:50%;
+  margin-top:-17px;
+  
+}
+div.mobileLogo>a>img {
+  width:60%;
+  height:100%;
+}
+div.topmenuBar {
+  position:absolute;
+  top:50%;
+  margin-top:-18px;
+  right:0;
+}
+div.topmenuBar>img {
+  width:60%;
+}
+
+/* ====================메뉴창====================== */
+
+div.menuWindow {
+  width:62.5%;
+  height:1000px;
+  position:absolute;
+  top:0px;
+  right:-62.5%;
+  display: none;
+  box-shadow: 0px 0px 30px  rgb(37, 37, 37) ;
+  background: white;
+  z-index: 10001;
+  
+}
+p.close {
+  position: absolute;
+  right: 2vw;
+}
+p.close>span {
+  font-size:7.5vw;
+  color:rgb(184, 184, 184);
+}
+div.menulogo {
+  width:38vw;
+  
+  margin-left:13vw;
+  margin-top:31px;
+}
+div.menulogo>img {
+  width:100%;
+}
+
+ul.menulist {
+  width:38vw;
+  height:auto;
+  /* background: rgb(226, 226, 226); */
+  margin:31px auto;
+  text-align: center;
+}
+ul.menulist>li {
+  width:100%;
+  overflow: hidden;
+  padding-top: 18px;
+  padding-bottom: 4px;
+  border-top: solid 1px black;
+  font:bold 3.8vw "Noto Sans KR";
+  transition:0.3s ease-out;
+}
+ul.menulist>li>span {
+  position: absolute;
+  left:45vw;
+}
+ul.menulist>li.selected>span{
+ -webkit-transform: rotate(180deg);
+ 
+}
+ul.submenu {
+  width:100%;
+  height:auto;
+  padding-top: 25px;
+}
+ul.submenu>li {
+  height:auto;
+  font:normal 3vw/32px "Noto Sans KR";
+  
+}
+div.darkLayer {
+  width:100%;
+  height:1000px;
+  background:rgb(12, 11, 11, 0.6);
+  display:none;
+  position: absolute;
+  z-index: 9998;
+}
+
+
+
+
+
+@media screen and (orientation:landscape) {
+  div.menulogo>img {
+    width:50%;
+  }
+  p.close>span {
+    font-size:6vw;
+  }
+  ul.menulist>li {
+    font:bold 2vw "Noto Sans KR";
+  }
+  ul.submenu>li {
+    font:normal 1.8vw/32px "Noto Sans KR";
+  }
+}
+
+

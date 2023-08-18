@@ -1,0 +1,34 @@
+div.productTop_wrap {
+    width:100%;
+    height:200px;
+    text-align: center;
+}
+
+p.title {
+    font:bold 4.5vw "Noto Sans KR";
+}
+p.subtitle {
+    font:normal 3.8vw "Noto Sans KR";
+    padding-top:30px;
+    box-sizing: border-box;
+}
+p.subtitle>span {
+    font:bold 3.8vw "Noto Sans KR";
+    color:#034EA1;
+}
+p.text {
+    width: 90%;
+    margin-left:4.5vw;
+    background:#F6F6F6;
+    font:normal 3.8vw "Noto Sans KR";
+    margin-top:30px;
+}
+
+@media screen and (orientation:landscape) {
+    div.productTop_wrap {
+        height:300px;
+    }
+    p.text {
+        font:normal 3vw "Noto Sans KR";
+    }
+}

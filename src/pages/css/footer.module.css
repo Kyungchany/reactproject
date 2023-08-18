@@ -1,0 +1,88 @@
+div#footer_wrap {
+    width:100%;
+    height:416px;
+    background:#3C3C3C;
+}
+nav#companyinfo {
+    width:1200px;
+    height:100%;
+    margin:0px auto;
+    position:relative;
+    left:0px;
+    top:0px;
+    /* background:pink; */
+}
+ul#companyinfo_list {
+    width:100%;
+    height:auto;
+    padding-top:60px;
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+p.mainmenu {
+    font:bold 16px "Noto Sans KR";
+    padding-bottom:20px;
+    box-sizing: border-box;
+    color:white;
+}
+p.mainmenu>span {
+    color:#C8C8C8;
+    margin-left:10px;
+}
+ul.submenu>li>a {
+    font:normal 16px/24px "Noto Sans KR";
+    color:#8C8C8C;
+    margin-left:10px;
+    position:relative;
+    left:0px;
+    top:0px;
+    text-decoration: none;
+}
+ul.submenu>li>a::before {
+    content:"";
+    display:block;
+    width:4px;
+    height:4px;
+    background:#8C8C8C;
+    position:absolute;
+    top:50%;
+    left:0px;
+    margin-left:-10px;
+    margin-top:-2px;
+}
+div#address {
+    width:40%;
+    height:100px;
+    margin-top:50px;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+}
+p#logoimg {
+    color:#565656;
+    font-size:40px;
+}
+p#addresstext {
+    color:#8C8C8C;
+    line-height:21px;
+    margin-left:20px;
+}
+p#privacy>a {
+    position:absolute;
+    right:0px;
+    bottom:80px;
+    color:white;
+    text-decoration: none;
+}
+p#privacy>a>span {
+    margin-left:15px;
+}
+
+@media screen and (max-width:1200px) {
+    nav#companyinfo {
+        width:100%;
+    }
+}
