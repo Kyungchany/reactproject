@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react'
 import styles from './css/header.module.css'
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
+import { useAuthContext } from '../context/AuthContext'
+import { login, logout } from '../api/firebase'
 
 export default function Header() {
 
@@ -51,6 +53,9 @@ export default function Header() {
    
   })
   
+  const {user} = useAuthContext()
+  console.log(user)
+  
   
   return (
     <>
@@ -65,7 +70,22 @@ export default function Header() {
         <li>TEL(031)-123-4567</li>
         <li>Fax(031)-123-4567</li>
         <li>Email <span>secondbattery@secondbattery.com</span></li>
+        {
+        user ?
+        <p><button className={styles.login} onClick={logout}>로그아웃{user.displayName}</button></p>
+        
+        :
+        <p>
+        <button className={styles.login} onClick={login}>로그인</button>
+        </p>
+       }
       </ul>
+
+      {/* <p>
+        <button className={styles.login}>로그인</button>
+      </p>
+      <p><button className={styles.login}>로그아웃</button>
+      </p> */}
      </nav>
 
      <nav id={styles.mainmenu}>

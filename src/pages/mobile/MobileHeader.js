@@ -69,6 +69,7 @@ export default function MobileHeader() {
   const [clickIndex, setClickIndex] = useState(null)
 
   const {user} = useAuthContext()
+  console.log('test',user)
   
 
  
@@ -164,11 +165,14 @@ export default function MobileHeader() {
 
           {
             user ?
-            
-            <button className={styles.login} onClick={login}>Login</button>
-            :
+            <p>
             <button className={styles.login} onClick={logout}>Logout</button>
-            
+            {/* {user.display} */}
+            </p>
+            :
+            <p>
+            <button className={styles.login} onClick={login}>Login</button>
+            </p>
           }
           
 

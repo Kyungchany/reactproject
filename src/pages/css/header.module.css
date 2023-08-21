@@ -104,6 +104,16 @@ button.button {
   border:none;
   margin-top:5px
 }
+p>button.login {
+  height:20px;
+  color:white;
+  background:#4C67BF;
+  border-radius:5px;
+  border:none;
+  margin-top:5px;
+  margin-left:2vw;
+}
+
 
 
 @media screen and (max-width:1200px) {
