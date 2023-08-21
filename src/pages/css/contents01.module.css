@@ -54,19 +54,28 @@ ul#contents_list>li {
   position:relative;
   left:0px;
   top:0px;
+  transition: 0.3s;
+
 }
 ul#contents_list>li:hover {
-  background:rgb(171, 183, 236);
+  background: #000;
+}
+ul#contents_list>li:hover>a>p {
+  color:white;
+}
+ul#contents_list>li:hover>a>p.contents_text {
+  color:#8c8c8c;
+}
+ul#contents_list>li:hover>a>p.contents_readmore>span {
+  color:white;
 }
 
-ul#contents_list>li>p.contents_title01{
-  color:white
-}
 
 ul#contents_list>li>a {
   text-decoration: none;
   color:black;
 }
+
 p.contents_title01 {
   font:bold 0.88em "Noto Sans KR";
   letter-spacing: 0.5em;
@@ -97,6 +106,7 @@ p.contents_readmore>span {
   box-sizing: border-box;
   color:#3c3c3c;
 }
+
 
 
 ul#contents_list>li:nth-child(1) {

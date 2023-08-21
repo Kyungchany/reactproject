@@ -24,10 +24,7 @@ export default function Header() {
       selectedMenu.classList.remove(`${styles.selected}`)
       gsap.to(selectedMenu, {top:0 , duration:0.3 , ease:'power1.out'})
     }
-    // else if(selectedMenu===null){
-    //   selectedMenu.classList.remove(`${styles.selected}`)
-    //   gsap.to(selectedMenu, {top:0 , duration:0.3 , ease:'power1.out'})
-    // }
+
 
     
   })
@@ -93,7 +90,9 @@ export default function Header() {
       <button className={styles.button}>ENG</button>
      </div>
 
+
     </header>
+
 
     </>
     

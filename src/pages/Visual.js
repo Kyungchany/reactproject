@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useRef } from 'react'
 import styles from './css/visual.module.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,6 +15,17 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 export default function Visual() {
+
+  const stockWrap = useRef()
+  const closeStock = useCallback(()=>{
+    stockWrap.current.style.display="none";
+  }, [])
+  let now= new Date()
+  let month=now.getMonth()
+  let today=now.getDate()
+
+
+  // console.log(today)
   return (
    
     <div id={styles.visual_wrap}>
@@ -23,7 +34,7 @@ export default function Visual() {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-              delay: 5000,
+              delay:5000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -70,6 +81,13 @@ export default function Visual() {
             </SwiperSlide>
 
             </Swiper>
+
+            <div className={styles.stock} ref={stockWrap}>
+              <p className={styles.name}>SecondBattery<br></br>(10041004)<span onClick={closeStock}><i class="fa-solid fa-xmark"></i></span></p>
+              <p className={styles.update}>{month+1}/{today} 1,293,000<span>23,000</span></p>
+              <p className={styles.upimg}><i class="fa-solid fa-sort-up"></i></p>
+               
+            </div>
         
     
     

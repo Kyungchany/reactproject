@@ -44,12 +44,13 @@ export default function Contents01() {
           </li>
             ))
           } */}
-          <li><Link to='/'>
-          <p className={styles.contents_title01}>Work Process</p>
-            <p className={styles.contents_title02}>제조공정</p>
-            <p className={styles.contents_img01}><img src='/images/workprocess.png'/></p>
-            <p className={styles.contents_text}>이차전지 제품의 제조공정을 체험해보세요</p>
-            <p className={styles.contents_readmore}>READ MORE<span><i class="fa-regular fa-circle-right"></i></span></p>
+          <li>
+            <Link to='/'>
+              <p className={styles.contents_title01}>Work Process</p>
+              <p className={styles.contents_title02}>제조공정</p>
+              <p className={styles.contents_img01}><img src='/images/workprocess.png'/></p>
+              <p className={styles.contents_text}>이차전지 제품의 제조공정을 체험해보세요</p>
+              <p className={styles.contents_readmore}>READ MORE<span><i class="fa-regular fa-circle-right"></i></span></p>
             </Link>
             </li>
           <li>

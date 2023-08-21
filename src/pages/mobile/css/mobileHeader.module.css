@@ -102,6 +102,16 @@ div.darkLayer {
   z-index: 9998;
 }
 
+button.login {
+  font:bold 3.8vw "Noto Sans KR";
+  margin-left:35%;
+  width:20vw;
+  height:30px;
+  background:#034EA1;
+  color:white;
+  border: none;
+}
+
 
 
 
@@ -118,6 +128,9 @@ div.darkLayer {
   }
   ul.submenu>li {
     font:normal 1.8vw/32px "Noto Sans KR";
+  }
+  button.login {
+    font-size:2vw;
   }
 }
 

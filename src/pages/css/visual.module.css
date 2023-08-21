@@ -54,6 +54,44 @@ p.visual_text02 {
   letter-spacing: 0.6em;
 }
 
+div.stock {
+  position:absolute;
+  z-index:3333;
+  top:480px;
+  right:0px;
+  width:35%;
+  height:300px;
+  background:rgb(0, 0, 0,0.5);
+  text-align: center;
+}
+p.name {
+  color:white;
+  font:bold 28px "Noto Sans KR";
+  letter-spacing: 10px;
+  margin-top:50px;
+}
+p.name>span {
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+p.update {
+  font:bold 21px "Noto Sans KR";
+  color:white;
+  letter-spacing: 10px;
+  margin-top:50px;
+}
+p.update>span {
+  color:red;
+  margin-left:40px;
+}
+p.upimg {
+  font-size: 35px;
+  color:red;
+  margin-left:150px;
+  margin-top:-22px;
+}
+
 
 
 

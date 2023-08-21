@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import styles from './css/mobileHeader.module.css'
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
+import { useAuthContext } from '../../context/AuthContext'
+import { login, logout } from '../../api/firebase'
 
 export default function MobileHeader() {
 
@@ -65,6 +67,9 @@ export default function MobileHeader() {
 
   // })
   const [clickIndex, setClickIndex] = useState(null)
+
+  const {user} = useAuthContext()
+  
 
  
  
@@ -153,6 +158,20 @@ export default function MobileHeader() {
             </ul>
           </li> */}
         </ul>
+
+          {/* <button className={styles.login}>Login</button>
+          <button className={styles.login}>Logout</button> */}
+
+          {
+            user ?
+            
+            <button className={styles.login} onClick={login}>Login</button>
+            :
+            <button className={styles.login} onClick={logout}>Logout</button>
+            
+          }
+          
+
       </div>
 
      <div className={styles.darkLayer} ref={layer}></div>

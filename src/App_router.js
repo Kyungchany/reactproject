@@ -11,7 +11,7 @@ import MobileNotFound from './pages/mobile/MobileNotFound'
 import MobileHome from './pages/mobile/MobileHome'
 import MobileProduct from './pages/mobile/MobileProduct'
 import MobileDetail from './pages/mobile/MobileDetail'
-
+import { AuthContextProvider } from './context/AuthContext'
 
 export default function App_router() {
    
@@ -47,6 +47,8 @@ export default function App_router() {
   ])
   
   return (
-    <RouterProvider router={router}/>
+    <AuthContextProvider>
+      <RouterProvider router={router}/>
+    </AuthContextProvider>
   )
 }
