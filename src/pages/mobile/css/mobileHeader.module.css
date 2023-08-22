@@ -88,9 +88,11 @@ ul.submenu {
   height:auto;
   padding-top: 25px;
 }
-ul.submenu>li {
+ul.submenu>li>a {
   height:auto;
-  font:normal 3vw/32px "Noto Sans KR";
+  font:normal 3.3vw/32px "Noto Sans KR";
+  text-decoration: none;
+  color:black;
   
 }
 div.darkLayer {
@@ -126,7 +128,7 @@ button.login {
   ul.menulist>li {
     font:bold 2vw "Noto Sans KR";
   }
-  ul.submenu>li {
+  ul.submenu>li>a {
     font:normal 1.8vw/32px "Noto Sans KR";
   }
   button.login {

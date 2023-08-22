@@ -10,8 +10,9 @@ export default function MobileHeader() {
   const menus = [
     {index:0, name:'회사소개', submenuList:[{index:0, name:'회사개요'}, {index:1, name:'CEO인사말'}, {index:2, name:'연혁'}, {index:3, name:'인증현황'}, {index:4, name:'찾아오시는 길'}]},
     {index:1, name:'사업소개', submenuList:[{index:0, name:'사업소개'}]},
-    {index:2, name:'제품소개', submenuList:[{index:0, name:'PT'}, {index:1, name:'E/V'}, {index:2, name:'E-BIKE'}, {index:3, name:'DRONE'}, {index:4, name:'ESC'}]},
-    {index:3, name:'고객문의', submenuList:[{index:0, name:'고객문의'}, {index:1, name:'FAQ'}, {index:2, name:'개인정보처리방침'}, {index:3, name:'이메일무단수집거부'}]},
+    {index:2, name:'이차전지', submenuList:[{index:0, name:'이차전지 종류', path:'/product'}]},
+    {index:3, name:'제품소개', submenuList:[{index:0, name:'PT'}, {index:1, name:'E/V'}, {index:2, name:'E-BIKE'}, {index:3, name:'DRONE'}, {index:4, name:'ESC'}]},
+    {index:4, name:'고객문의', submenuList:[{index:0, name:'고객문의'}, {index:1, name:'FAQ'}, {index:2, name:'개인정보처리방침'}, {index:3, name:'이메일무단수집거부'}]},
 
   ]
 
@@ -19,6 +20,15 @@ export default function MobileHeader() {
   const menuWrap = useRef()
   const menuBar = useRef()
   const layer = useRef()
+  const submenu =useRef()
+
+  const menuWrapClose = useCallback(()=>{
+    layer.current.style.display='none'
+    gsap.to(menuWrap.current, {right:'-62.5%', duration:0.5, ease:'power1.out', onComplete:()=>{
+      menuWrap.current.style.display='none'
+    }})
+    setClickIndex('')
+  })
 
 
   const menuOpen = useCallback(()=>{
@@ -119,7 +129,7 @@ export default function MobileHeader() {
                 <ul className={styles.submenu}>
                   {
                     item.submenuList.map((subitem)=>(
-                      <li>{subitem.name}</li>
+                      <li ref={submenu} onClick={menuWrapClose}><Link to={subitem.path}>{subitem.name}</Link></li>
                     ))
                   }
                 </ul>

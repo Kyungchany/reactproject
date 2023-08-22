@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { getProducts } from '../api/firebase'
 
 
 export default function useProducts() {
@@ -9,8 +10,11 @@ export default function useProducts() {
 
   useEffect(()=>{
 
-    axios.get('/data/products.json').then((res)=>(
-      setAllProducts(res.data)
+    // axios.get('/data/products.json').then((res)=>(
+    //   setAllProducts(res.data)
+    // ))
+    getProducts().then((res)=>(
+      setAllProducts(res)
     ))
   }, [])
 
