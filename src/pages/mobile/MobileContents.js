@@ -6,11 +6,11 @@ export default function MobileContents() {
 
   const mainMenus = [
     {index:0, title:'제조공정', path:'/', images:'/images/mobileworkprocess.png',},
-    {index:1, title:'이차전지', path:'/product', images:'/images/mobileworkprocess.png',},
-    {index:2, title:'주가정보', path:'/', images:'/images/mobileworkprocess.png',},
-    {index:3, title:'주요실적', path:'/', images:'/images/mobileworkprocess.png',},
-    {index:4, title:'사회공헌', path:'/', images:'/images/mobileworkprocess.png',},
-    {index:5, title:'R&D', path:'/', images:'/images/mobileworkprocess.png',}
+    {index:1, title:'이차전지', path:'/product', images:'/images/mobileproduct.png',},
+    {index:2, title:'주가정보', path:'/', images:'/images/mobilestock.png',},
+    {index:3, title:'주요실적', path:'/', images:'/images/mobilemajor.png',},
+    {index:4, title:'사회공헌', path:'/', images:'/images/mobilesocial.png',},
+    {index:5, title:'R&D', path:'/', images:'/images/mobiler&d.png',}
   ]
 
   return (

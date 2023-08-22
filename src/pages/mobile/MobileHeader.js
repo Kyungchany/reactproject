@@ -108,12 +108,7 @@ export default function MobileHeader() {
               <li key={item.index} onClick={(e)=>{
 
 
-                // let activeIndex=item.index!==clickIndex ? item.index : '';
-                // setClickIndex(activeIndex)
-                // setClickIndex(item.index)
-
-                //let activeIndex = item.index===clickIndex ? '' : item.index ;  //현재 열려있는 순번
-
+              
                 if(item.index===clickIndex){
                   setClickIndex('')
                 }else{

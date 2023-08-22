@@ -28,10 +28,13 @@ ul.mainMenu>li>a {
 p.title {
   font:normal 3.8vw "Noto Sans KR";
   color:black;
-  padding-top:22px;
+  padding-top:15px;
   padding-bottom:8px;
   box-sizing: border-box;
   letter-spacing: 2px;
+}
+p.img {
+  height:52px;
 }
 p.img>img {
   padding-bottom:5px;
@@ -47,6 +50,19 @@ p.arrow {
   box-sizing: border-box;
   color:black;
 }
+ul.mainMenu>li:nth-child(1)>a>p.img {
+  padding-top:7px;
+  box-sizing: border-box;
+ }
+ul.mainMenu>li:nth-child(3)>a>p.img {
+ padding-top:8px;
+ box-sizing: border-box;
+}
+ul.mainMenu>li:nth-child(5)>a>p.img {
+  padding-top:7px;
+  box-sizing: border-box;
+ }
+
 
 
 @media screen and (orientation:landscape){
