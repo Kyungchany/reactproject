@@ -74,6 +74,16 @@ export async function getProducts() { // 데이터 베이스에 등록된 상품
     return [];
   });
 }
+// export async function getProductsMobile() { // 데이터 베이스에 등록된 상품 로드 하는 함수 
+//   return get(ref(database, 'productsmobile')).then((snapshot) => {
+//     if (snapshot.exists()) {
+//       return Object.values(snapshot.val());
+//     }
+//     return [];
+//   });
+// }
+
+
 
 export async function getProductDetail(productId) { // 특정 id 와 같은 상품 찾아주는 함수 ( 상품상세페이지 )
   return get(
@@ -87,4 +97,16 @@ export async function getProductDetail(productId) { // 특정 id 와 같은 상�
     }
   });
 }
+// export async function getProductMobileDetail(productId) { // 특정 id 와 같은 상품 찾아주는 함수 ( 상품상세페이지 )
+//   return get(
+//     query(ref(database, "productsmobile"), orderByKey("id"), equalTo(productId))
+//   ).then((snapshot) => {
+//     if (snapshot.exists()) {
+//       return Object.values(snapshot.val())[0];
+//     } else {
+//       console.log("Product not found");
+//       return null;
+//     }
+//   });
+// }
 

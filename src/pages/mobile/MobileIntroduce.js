@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styles from './css/mobileIntroduce.module.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import useProducts from '../../hooks/useProducts'
+
 
 export default function MobileIntroduce() {
 
@@ -12,13 +14,16 @@ export default function MobileIntroduce() {
     {index:3, name:'그 외'},
   ]
 
-  const [allProducts, setAllProducts] = useState([])
+  // const [allProducts, setAllProducts] = useState([])
 
-  useEffect(()=>{
-    axios.get('/data/mobileProducts.json').then((res)=>(
-      setAllProducts(res.data)
-    ))
-  }, [])
+  // useEffect(()=>{
+  //   axios.get('/data/mobileProducts.json').then((res)=>(
+  //     setAllProducts(res.data)
+  //   ))
+  // }, [])
+  const [allProducts] = useProducts()
+  
+  
 
 
   const [selectedCategory, setSelectedCategory] = useState(menus[0].name)

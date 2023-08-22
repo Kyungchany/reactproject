@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react'
 import styles from './css/introduce.module.css'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import useProducts from '../hooks/useProducts'
+
 
 export default function Introduce() {
 
-  const [allProducts, setAllProducts] = useState([]) //2차전지 종류 전체
+  //const [allProducts, setAllProducts] = useState([]) //2차전지 종류 전체
 
-  useEffect(()=>{
-    axios.get('/data/products.json').then((res)=>(
-      setAllProducts(res.data)
-    ))
-  }, [])
+  
+
+  const [allProducts] = useProducts()
+
 
 
   const categorys = [
@@ -69,15 +70,16 @@ export default function Introduce() {
           {
             categoryItems.map((item)=>(
               <li key={item.id}>
-                <p className={styles.product_title}>{item.product_title}</p>
-                <p className={styles.product_img}><img src={item.product_img} alt=''/></p>
-                <p className={styles.product_text}>{item.product_text}</p>
+                <p className={styles.product_title}>{item.title}</p>
+                <p className={styles.product_img}><img src={item.img} alt=''/></p>
+                <p className={styles.product_text}>{item.text}</p>
                 <button onClick={()=>{
                   navigate(`/product/${item.id}`)
                 }} className={styles.product_button}>자세히보기</button>
               </li>
             ))
           }
+          
 
         </ul>
 

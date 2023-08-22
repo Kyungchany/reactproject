@@ -25,9 +25,9 @@ ul.menulist {
   margin-left:4.5vw;
 }
 ul.menulist>li>button {
-  width:21vw;
+  width:20vw;
   height:35px;
-  font:normal 4vw/35px "Noto Sans KR";
+  font:normal 3.8vw/35px "Noto Sans KR";
   border-radius: 6px;
   border:none;
   background: #034EA1;
@@ -40,7 +40,7 @@ ul.products_list {
   text-align: center;
 }
 p.products_title {
-  font:normal 4vw "Noto Sans KR";
+  font:normal 3.8vw "Noto Sans KR";
   padding-top:20px;
   color:#034EA1;
 }
@@ -53,7 +53,7 @@ p.products_text {
   margin:0px auto;
   /* background:red; */
   text-align: left;
-  font:normal 4vw "Noto Sans KR";
+  font:normal 3.8vw "Noto Sans KR";
   padding-top:20px;
   padding-bottom:30px;
 }

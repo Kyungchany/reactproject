@@ -2,15 +2,11 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import styles from './css/mobileDetial_list.module.css'
+import useProducts from '../../hooks/useProducts'
+
 
 export default function MobileDetail_list() {
-  const [allProducts, setAllProducts] = useState([])
-
-  useEffect(()=>{
-    axios.get('/data/mobileProducts.json').then((res)=>(
-      setAllProducts(res.data)
-    ))
-  }, [])
+  const [allProducts] = useProducts()
 
   const {productId} = useParams()
 
@@ -20,7 +16,6 @@ export default function MobileDetail_list() {
     setBattery(allProducts.filter((item)=>(item.id===productId)))
   }, [allProducts])
 
-  console.log('test',battery)
 
   return (
     <div className={styles.detail_wrap}>
@@ -61,7 +56,7 @@ export default function MobileDetail_list() {
                    <p className={styles.img}><img src={subitem.img03}/></p>
                    <p className={styles.text03}>{subitem.text03}</p>
                  </li>
-             </ul>
+              </ul>
              </>
               ))
             }

@@ -119,6 +119,25 @@ p.img {
   p.text>span {
     font-size:2.5vw;
   }
+  p.title01 {
+    font-size:2.5vw;
+  }
+  p.title02 {
+    font-size:2.5vw;
+  }
+  p.title03 {
+    font-size:2.5vw;
+  }
+  p.text01 {
+    font-size:2.5vw;
+  }
+  p.text02 {
+    font-size:2.5vw;
+  }
+  p.text03 {
+    font-size:2.5vw;
+  }
+
 
   
 }

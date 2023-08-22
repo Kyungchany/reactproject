@@ -63,7 +63,7 @@ export default function Visual() {
               <div className={styles.title_text_box}>
                 <p className={styles.visual_text01}>secondary battery representa tive</p>
                 <p className={styles.visual_title}>The Global Leading <br></br><span>Company</span></p>
-                <p className={styles.visual_text02}>Earth Environment and Energy Material</p>
+                <p className={styles.visual_text02}></p>
               </div>
             </div>
             </SwiperSlide>
@@ -74,7 +74,7 @@ export default function Visual() {
                 <div className={styles.title_text_box}>
                   <p className={styles.visual_text01}>secondary battery representa tive</p>
                   <p className={styles.visual_title}>The Global Leading <br></br><span>Company</span></p>
-                  <p className={styles.visual_text02}>Earth Environment and Energy Material</p>
+                  <p className={styles.visual_text02}>Next-generation future industry</p>
                 </div>
             </div>
             

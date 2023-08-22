@@ -65,7 +65,7 @@ export default function MobileVisual() {
             <div className={styles.visualWrap02}>
             <div className={styles.visual_text_box}>
               <p className={styles.text02}>The Global Leading<br></br><span>Company</span></p>
-              <p className={styles.text03}>Earth Environment and Energy Material</p>
+              <p className={styles.text03}>Moving towards eco-friendliness</p>
             </div>
 
           </div>
@@ -74,7 +74,7 @@ export default function MobileVisual() {
         <div className={styles.visualWrap03}>
             <div className={styles.visual_text_box}>
               <p className={styles.text02}>The Global Leading<br></br><span>Company</span></p>
-              <p className={styles.text03}>Earth Environment and Energy Material</p>
+              <p className={styles.text03}>Next-generation future industry</p>
             </div>
 
         </div>
