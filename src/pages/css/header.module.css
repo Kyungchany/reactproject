@@ -76,7 +76,7 @@ ul#mainmenu_list>li>a.selected {
 
 
 div#company_profile {
-  width:20%;
+  width:25%;
   height:30px;
   /* background:red; */
   position:absolute;
@@ -85,6 +85,7 @@ div#company_profile {
   flex-wrap:wrap;
   flex-direction: row;
   justify-content: space-around;
+
 }
 p#profile_title>a {
   font:normal 0.5vw/30px "Noto Sans KR";
@@ -102,7 +103,8 @@ button.button {
   background:#4C67BF;
   border-radius:5px;
   border:none;
-  margin-top:5px
+  margin-top:5px;
+  margin-left:2vw;
 }
 p>button.login {
   height:20px;
@@ -125,6 +127,17 @@ p>button.login {
   }
   ul#info_list>li {
     font-size:1vw;
+  }
+}
+@media screen and (max-width:980px) {
+  div#company_profile {
+    width:30%;
+  }
+  p#profile_title>a {
+    display:none ;
+  }
+  p#profile_img>a {
+    display: none;
   }
 }
 

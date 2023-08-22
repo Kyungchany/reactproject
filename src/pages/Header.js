@@ -70,15 +70,7 @@ export default function Header() {
         <li>TEL(031)-123-4567</li>
         <li>Fax(031)-123-4567</li>
         <li>Email <span>secondbattery@secondbattery.com</span></li>
-        {
-        user ?
-        <p><button className={styles.login} onClick={logout}>로그아웃{user.displayName}</button></p>
-        
-        :
-        <p>
-        <button className={styles.login} onClick={login}>로그인</button>
-        </p>
-       }
+
       </ul>
 
       {/* <p>
@@ -108,6 +100,15 @@ export default function Header() {
       <p id={styles.profile_title}><Link to='/'>Company Profile</Link></p>
       <p id={styles.profile_img}><Link to='/'><i class="fa-solid fa-download"></i></Link></p>
       <button className={styles.button}>ENG</button>
+      {
+        user ?
+        <p><button className={styles.login} onClick={logout}>로그아웃{user.displayName}</button></p>
+        
+        :
+        <p>
+        <button className={styles.login} onClick={login}>로그인</button>
+        </p>
+      }
      </div>
 
 
