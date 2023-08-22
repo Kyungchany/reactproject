@@ -102,8 +102,10 @@ export default function Header() {
       <button className={styles.button}>ENG</button>
       {
         user ?
-        <p><button className={styles.login} onClick={logout}>로그아웃{user.displayName}</button></p>
-        
+        <>
+        <p><button className={styles.login} onClick={logout}>로그아웃</button></p>
+        {/* <p className={styles.loginid}><span>{user.displayName}</span>님 환영합니다</p> */}
+        </>
         :
         <p>
         <button className={styles.login} onClick={login}>로그인</button>

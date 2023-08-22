@@ -175,10 +175,12 @@ export default function MobileHeader() {
 
           {
             user ?
+            <>
             <p>
             <button className={styles.login} onClick={logout}>Logout</button>
-            {/* {user.display} */}
             </p>
+            <p className={styles.loginid}><span>{user.displayName}</span>님 환영합니다</p>
+            </>
             :
             <p>
             <button className={styles.login} onClick={login}>Login</button>

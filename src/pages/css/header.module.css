@@ -115,6 +115,15 @@ p>button.login {
   margin-top:5px;
   margin-left:2vw;
 }
+/* p.loginid {
+  font:normal 14px "Noto Sans KR";
+  margin-left:30%;
+}
+p.loginid>span {
+  color:#034EA1;
+  font:normal 14px "Noto Sans KR";
+} */
+
 
 
 
@@ -134,7 +143,7 @@ p>button.login {
     width:30%;
   }
   p#profile_title>a {
-    display:none ;
+    display:none;
   }
   p#profile_img>a {
     display: none;

@@ -113,6 +113,14 @@ button.login {
   color:white;
   border: none;
 }
+p.loginid {
+  margin-top:10px;
+  text-align: center;
+}
+p.loginid>span {
+  color:#034EA1;
+  font:normal 3.8vw "Noto Sans KR";
+}
 
 
 
