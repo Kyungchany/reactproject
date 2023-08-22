@@ -25,9 +25,9 @@ ul.menulist {
   margin-left:4.5vw;
 }
 ul.menulist>li>button {
-  width:22vw;
+  width:20vw;
   height:35px;
-  font:normal 3.8vw/35px "Noto Sans KR";
+  font:normal 3.5vw/35px "Noto Sans KR";
   border-radius: 6px;
   border:none;
   background: #034EA1;
