@@ -47,8 +47,8 @@ export default function App_router() {
   ])
   
   return (
-    <AuthContextProvider>
+    <AuthContextProvider> 
       <RouterProvider router={router}/>
-    </AuthContextProvider>
+    </AuthContextProvider>               //로그인 로그아웃  
   )
 }

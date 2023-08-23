@@ -59,12 +59,13 @@ div.stock {
   z-index:3333;
   top:480px;
   right:0px;
-  width:35%;
+  width:500px;
   height:300px;
   background:rgb(0, 0, 0,0.5);
   text-align: center;
 }
 p.name {
+  width: 100%;
   color:white;
   font:bold 28px "Noto Sans KR";
   letter-spacing: 10px;
@@ -90,6 +91,10 @@ p.upimg {
   color:red;
   margin-left:150px;
   margin-top:-22px;
+}
+
+@media screen and (max-width:1200px) {
+
 }
 
 
