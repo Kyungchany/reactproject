@@ -17,7 +17,7 @@ export default function Introduce() {
 
   const categorys = [
     {index:0, text:'전체'},
-    {index:1, text:'핵심 소재'},
+    {index:1, text:'핵심소재'},
     {index:2, text:'신소재'},
     {index:3, text:'그 외'}
   ]
@@ -59,10 +59,6 @@ export default function Introduce() {
               </li>
             ))
           }
-          {/* <li><button>전체</button></li>
-          <li><button>핵심 소재</button></li>
-          <li><button>신소재</button></li>
-          <li><button>그 외</button></li> */}
         </ul>
 
 

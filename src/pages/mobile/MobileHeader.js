@@ -83,8 +83,6 @@ export default function MobileHeader() {
   
 
  
- 
-
   return (
     <div className={styles.mobileHeader}>
        
@@ -164,9 +162,6 @@ export default function MobileHeader() {
             </ul>
           </li> */}
         </ul>
-
-          {/* <button className={styles.login}>Login</button>
-          <button className={styles.login}>Logout</button> */}
 
           {
             user ?
