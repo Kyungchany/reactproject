@@ -1,0 +1,42 @@
+[
+  {
+    "title":"SB RECYCLING",
+    "subtitle":"[연구소 로재시공 및 정비]",
+    "text":"제품의 재질, 수량,용도, 품질, 납기, 예산 등을 고려 최적의 제작공법을 선정 최단 시일 내 고객이 요구하는 시제품을 도면 SPEC에 맞추어 성형",
+    "category":"SB RECYCLING",
+    "img":"/images/contents02_img01.png",
+    "id":"001"
+  },
+  {
+    "title":"SAND CORE",
+    "subtitle":"[222222222]",
+    "text":"22222222222222222222222222222222222222222222222222222222222",
+    "category":"SAND CORE",
+    "img":"/images/contents02_img02.png",
+    "id":"002"
+  },
+  {
+    "title":"Automotive Parts",
+    "subtitle":"[3333333333]",
+    "text":"33333333333333333333333333333333333333333333333333333333333",
+    "category":"Automotive Parts",
+    "img":"/images/contents02_img03.png",
+    "id":"003"
+  },
+  {
+    "title":"SPECIALTY SB",
+    "subtitle":"[444444444444]",
+    "text":"444444444444444444444444444444444444444444444444444444444444",
+    "category":"SPECIALTY SB",
+    "img":"/images/contents02_img04.png",
+    "id":"004"
+  },
+  {
+    "title":"COLD ROLLED STEEL SHEETS",
+    "subtitle":"[555555555555]",
+    "text":"555555555555555555555555555555555555555555555555555555555555",
+    "category":"COLD ROLLED STEEL SHEETS",
+    "img":"/images/contents02_img01.png",
+    "id":"005"
+  }
+]

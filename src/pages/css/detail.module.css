@@ -207,6 +207,19 @@ p.detail02_img03 {
 }
 
 
+ul.changeimg {
+  margin-top:10px;
+  display:flex;
+}
+
+ul.changeimg>li>img {
+  width:50%;
+}
+/* ul.changeimg>li:nth-child(1)>img {
+  border:solid 1px black;
+} */
+
+
 
 @media screen and (max-width:1200px) {
   div.introduce_wrap {
@@ -243,6 +256,7 @@ p.detail02_img03 {
     margin:0px auto;
     margin-bottom:40px;
   }
+
 
  
 }
